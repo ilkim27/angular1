@@ -1,0 +1,38 @@
+<div class="container-mt-3" style="margin-top:50px;">
+    <div class="row">
+        <div class="col-md-4 ">
+         <button class="btn btn-outline-info"[routerLink]="['/paylaşılanlar']">Paylaşılacaklar</button>
+
+        </div>
+        <div class="container-mt-5" style="margin-top:50px;">
+            <div class="row">
+                <div class="col-md-12 offset-md-12">
+                <form #frm="ngForm" (ngSubmit)="Kaydet()">
+                <div class="card" >
+                    <div class="card-header"> 
+                        <h4>YENİ BELGE EKLE</h4>
+                     </div>
+                    <div class="card-body"> 
+                        <div class="form-group">
+                            <label> Dosya Adı</label>
+                            <input type="text" name="dosyaadi" class="form-control"   [(ngModel)]="seckayit.dosyaadi" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label> İÇERİK</label>
+                            <textarea rows="5" name="icerik" class="form-control"   [(ngModel)]="seckayit.icerik" required></textarea>
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <input type="submit" value="Kaydet" class="btn btn-outline-info" [disabled]="frm.invalid">
+                         </div>
+
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

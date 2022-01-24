@@ -1,0 +1,84 @@
+<div class="container-mt-5" style="margin-top:50px;">
+    <div class="row">
+        <div class="col-md-10   ">
+           <h1 class="text-center">HOŞ GELDİN  <b>{{adsoyad}}</b> </h1> 
+           <h1 class="text-center">Hazırsan başlayalım  <button class="btn btn-outline-info" [routerLink]="['/sayfam']">Kayıt Ekle </button></h1>
+          
+            <button class="btn btn-outline-danger" style="float: right"[routerLink]="['/kullanıcıgiris']" (click)="OturumuKapat()" *ngIf="fbServis.OturumKontrol()">Oturumu Kapat</button>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header bg-info text-white" >
+                    <h1>
+                        PAYLAŞILANLAR
+                    </h1>
+                </div>
+                <div class="card-body">
+                    Hızlı Erişim ve makine öğrenimi tabanlı arama geliştirmeleri gibi özellikleri kullanarak önemli içerikleri, ortak çalışanları, etkinlikleri tanır ve her kullanıcıyı, işlem yapılması gerekebilen dosyalara bağlar.
+                </div>
+                <div class="nav-item">
+                    <a class=" btn btn-outline-info" a href="kullanıcıgiris">Kullanmaya Başla</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header bg-danger text-white" >
+                    <h1>
+                       DEPOLAMA
+                    </h1>
+                </div>
+                <div class="card-body">
+                    Depolama kapasitesini dert etmeyin
+                    esnek depolama alanı seçenekleri sunar. Böylece tüm dosyalarınız için her zaman yeriniz olur.
+                
+                </div>
+                <div class="nav-item">
+                    <a class=" btn btn-outline-info" a href="kullanıcıgiris">Kullanmaya Başla</a>
+                </div>
+               <router-outlet></router-outlet>
+               
+            
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header bg-info text-white" >
+                    <h1>
+                        Kullanım
+                    </h1>
+                </div>
+                <div class="card-body">
+                    Dosyalarınızı depolamak, paylaşmak ve onlara erişmek için tek bir güvenli konum
+İstediğiniz dosyayı depolayabilirsiniz. Dosyalarınıza istediğiniz zaman, bilgisayarınızdan veya mobil cihazlarınızdan, yani istediğiniz yerden erişebilirsiniz. Dosyaların nasıl paylaşılacağını da siz belirlersiniz. 
+                </div>
+                <div class="nav-item">
+                    <a class=" btn btn-outline-info" a href="kullanıcıgiris">Kullanmaya Başla</a>
+                </div>
+            </div>
+        </div>
+ </div>     
+        
+
